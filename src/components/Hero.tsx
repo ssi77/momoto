@@ -61,7 +61,9 @@ export default function Hero() {
           className="font-bold text-[#FAF5FF] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95]"
           style={{ fontFamily: 'var(--font-display)' }}
         >
-          La tua moto,
+          La tua moto.
+          <br />
+          La tua strada.
           <br />
           <span
             className="inline-block"
@@ -72,7 +74,7 @@ export default function Hero() {
               backgroundClip: 'text',
             }}
           >
-            la tua tribe.
+            La tua tribe.
           </span>
         </h1>
 
