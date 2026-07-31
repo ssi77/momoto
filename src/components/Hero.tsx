@@ -8,18 +8,32 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen pt-32 md:pt-40 pb-20 flex items-center justify-center overflow-hidden">
+      {/* Hero background video */}
+      <div className="absolute inset-0 pointer-events-none">
+        <video
+          src="https://pub-3a823b4a94e74f1c9bf9813f768ca0e7.r2.dev/builder/137/assets/ai-000128bb81-96581991a29c.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30 scale-105"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-[#181D15]/60" />
+      </div>
+
       {/* Decorative gradient blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute top-20 -left-20 w-72 h-72 rounded-full opacity-20 blur-3xl"
+          className="absolute top-20 -left-20 w-72 h-72 rounded-full opacity-30 blur-3xl"
           style={{ background: 'radial-gradient(circle, #FF4D2E 0%, transparent 70%)' }}
         />
         <div
-          className="absolute bottom-20 -right-20 w-72 h-72 rounded-full opacity-15 blur-3xl"
+          className="absolute bottom-20 -right-20 w-72 h-72 rounded-full opacity-25 blur-3xl"
           style={{ background: 'radial-gradient(circle, #FFB800 0%, transparent 70%)' }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-10 blur-3xl"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 blur-3xl"
           style={{ background: 'radial-gradient(circle, #00E5C7 0%, transparent 70%)' }}
         />
         {/* Grid texture */}
